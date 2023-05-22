@@ -1,0 +1,179 @@
+
+:root
+{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px; 
+    background-color: var(--Pale-blue);
+    background-image: url("../img/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+img 
+{
+    max-width: 100%;
+}
+.cards
+{
+    
+    width:min(90%,400px);
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+   
+   
+}
+.cards:hover
+{
+    box-shadow: 0 5px 30px hsla(224, 23%, 55%, 0.5);
+
+}
+.hero__img 
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card__body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block:1.5rem;
+    text-align: center;
+}
+.card__body h1 
+{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+}
+.card__body p
+{
+    font-size: 14px;
+    width: 70%;
+   
+    color:var(--Desaturated-blue);
+}
+.card__body--inner
+{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    min-width: 340px;
+    padding: 1rem;
+    border-radius: 20px;
+    gap: 1rem;
+
+}
+.link 
+{
+    color:var(--Bright-blue);
+}
+.annual__plan
+{
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction: column;
+    margin-right: auto;
+    gap: .4rem;
+  
+}
+.annual__plan--price 
+{
+    color:var(--Desaturated-blue);
+    font-weight: 600;
+}
+.annual__plan--heading
+{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    
+}
+.annual__plan--price
+{
+    font-size: .9rem;
+}
+.btn 
+{
+    min-width: 340px;
+    padding-block: 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color:#fff;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+}
+.btn-primary 
+{
+    background-color: var(--Bright-blue);
+    font-weight: 600;
+}
+.btn-secondary
+{
+    background-color: var(--Very-pale-blue);
+    color:var(--Desaturated-blue);
+    font-weight: 900;
+    font-size: .7rem;
+    cursor: pointer;
+}
+.btn-primary:hover 
+{
+    background-color:var(--Desaturated-blue);
+}
+.btn-secondary:hover
+{
+    color:var(--Dark-blue);
+    
+}
+.link:hover
+{
+    text-decoration: none;
+}
+@media (max-width:35em)
+{
+    body 
+    {
+        background-image: url("../img/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size:100%;
+        width: 100%;
+    }
+    .card__body--inner
+    {
+        min-width: 280px;
+    }
+    .btn 
+    {
+        min-width: 280px;
+    }
+}
